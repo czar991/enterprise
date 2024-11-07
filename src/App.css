@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+#root {
+  flex: 1;
+}
+.table-main {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+.table-main > div {
+  background-color: darkcyan;
+  flex: 1;
+}
+.table-sub {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+.table-sub > div {
+  background-color: #d28621;
+}
